@@ -1,29 +1,266 @@
 :root {
-	--shadow: rgba(202, 204, 207, 150);
+	--shadow: rgba(156, 156, 156, 150);
 	--darkshadow: rgba(0, 0, 0, 150);
+    --darkhighlight: rgba(0, 0, 0, 10);
 }
 
 body {
-	background-color: white;
-	height: 1000%;
-	margin: 0% 0% 0% 0%;
+	background-color: #ffff;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.container {
+    width: auto;
+    margin: 0 auto;
 }
 
 h1 {
-	text-align: center;
-	font-size: 903.2258%;
-    margin: 0% 0% 0% 0%;
-	text-shadow: 4px 8px var(--darkshadow);
-	-webkit-text-stroke: 3px black;
-	color: white;
+	font-size: 8.75rem;
+    padding-top: 7.5rem;
+	text-shadow: 0.25rem 0.5rem var(--shadow);
+}
+
+h2 {
+    font-size: 4.375rem;
+    text-shadow: 0.25rem 0.5rem var(--darkshadow);
+}
+
+h3 {
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 0.125rem 0.25rem var(--darkshadow);
+}
+
+p, .bodyinp {
+    color: #444444;
 }
 
 .bannerdiv {
-	background-color: #e30a17;
-	width: 100%;
-	height: 60%;
-	position: absolute;
+    background-image: url("../media/images/SPACEBLUE.png");
+	height: 30rem;
 	z-index: -10;
-	text-align: center;
+}
+
+nav {
+	padding-bottom: 1.25rem;
+	padding-top: 1.25rem;
+    border-bottom: 0.02rem solid black;
+	position: sticky;
+	top: 0px;
+	z-index: 10;
+    transition: 100ms ease;
+}
+
+nav:hover {
+    border-bottom: 0.125rem solid black;
+    transition: 100ms ease;
+}
+
+.navend {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.navbut
+{
+    text-align: right;
+    padding: 0.125rem 2rem;
+}
+
+.navicon {
+    position: absolute;
+    width: 4rem;
+    margin-top: -0.95rem;
+}
+
+.content {
+    overflow: hidden;
+    margin: 0rem 0rem 0rem 0.5rem;
+}
+
+.inlineimg {
+    float: right;
+    margin: 0 0 0.5rem 1rem;
+    width: 16rem;
+    background: white;
+}
+
+.inlineimg:hover {
+    background: #dfdfdf;
+}
+
+footer {
+    background: #2b2f3a;
+    border-top: 0.125rem solid black;
+}
+
+.footerimg {
+    float: left;
+    margin: 2.5rem 0 2.5rem 1rem;
+    width: 8rem;
+}
+
+.footertxt {
+    padding: 5rem 0 5rem 1rem;
+    text-shadow: 0.125rem 0.125rem var(--shadow);
+    text-decoration: none;
+}
+
+p, .footertxt {
+    font-size: 3rem;
+}
+
+.footerend {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.featured {
+    margin: 0% 10%;
+    padding: 0.5rem 0rem;
+    text-align: center;
+}
+
+.thumbnail {
+    height: 48rem;
+}
+
+.centeredbuttons {
+    padding-bottom: 4rem;
+    margin: 0% 40%;
+    display: grid;
+    place-items: center;
+}
+
+.regbut {
+    border: 0.25rem solid #5d68bb;
+}
+
+.infoinp {
+    color: #e0e0e0;
+    text-align: center;
+    border: 0.25rem solid #444444;
+}
+
+.infoinpcontainer {
+    text-align: center;
+}
+
+.bodyinpcontainer {
+    display: grid;
+    place-items: center;
+}
+
+.bodyinp {
+    width: 50%;
+    height: 8rem;
+    font-size: 1rem;
+    resize: none;
+    box-sizing: border-box;
+    border: 0.25rem solid #2b2f3a;
+}
+
+.regbut, .infoinp {
+    border-radius: 1rem;
+    padding: 1rem 0rem;
+    margin: 1rem 2rem;
+    font-size: 2rem;
+}
+
+.footer, .infoinp
+{
+    background: #2b2f3a;
+}
+
+.emailtext {
+    font-size: 2rem;
+}
+
+.txtlink, h2 {
+    color: #2f4770;
+}
+
+.regbut, .navbut, h2, h3 {
+    font-family: "NovaMono";
+}
+
+.navbut {
+    font-size: 1.5rem;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	position: absolute;
+}
+
+.navicon:hover, .navbut:hover, .regbut:hover, ::-webkit-scrollbar-track-piece, ::-webkit-scrollbar-track {
+	background: #4f58a1;
+	
+}
+
+::-webkit-scrollbar-thumb { 
+	border-radius: 10px;
+	outline: 2px solid white;
+	width: 10px;
+}
+
+.regbut, nav, ::-webkit-scrollbar-thumb {
+    background: #5d68bb; 
+}
+
+.pgsection, footer, .bannerdiv, .regbut, .thumbnail
+{
+    width: 100%;
+}
+
+.bannerdiv {
+    display: block;
+}
+
+.navicon, .navbut, .regbut, .inlineimg, .navicon:hover, .navbut:hover, .regbut:hover, .inlineimg:hover {
+    transition: 500ms ease;
+}
+
+.navstart, .navmenus, .footerstart, .footermid {
+    flex-shrink: 0;
+}
+
+.container, .navstart, .footerstart .navmenus, .navend, .footerend, .footermid {
+    align-items: stretch;
+    display: flex;
+}
+
+body, .bannerdiv, h1, .pgsection, footer {
     margin: 0% 0% 0% 0%;
+}
+
+.navmenus, .footermid, .container {
+    flex-grow: 1;
+}
+
+h1, p, .footertxt {
+    font-family: "Caveat";
+}
+
+h1, .container, .navbut {
+    position: relative;
+}
+
+h2, .bannerdiv, .centeredbuttons {
+    text-align: center;
+}
+
+h1, .navbut, .regbut, .footertxt, h3 {
+    color: #d0d8ff;
+}
+
+@font-face {
+    font-family: "Caveat";
+    src: url("../media/fonts/Caveat-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "NovaMono";
+    src: url("../media/fonts/NovaMono-Regular.ttf") format("truetype");
 }
