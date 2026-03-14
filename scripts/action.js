@@ -88,5 +88,5 @@ function GmailLink(to, subject, body)
     const encsubject = encodeURIComponent(subject);
     const encbody = encodeURIComponent(body);
 
-    return `https://mail.google.com/mail/u/0/?fs=1&to=${encto}&su=${encsubject}&body=${encbody}&tf=cm`;
+    return `mailto:${encto}?subject=${encsubject}&body=${encbody}&tf=cm`;
 }
