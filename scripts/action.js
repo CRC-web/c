@@ -77,18 +77,17 @@ function LoadPage()
             .then((json) => {
                 const url = document.URL;
                 const topic = url.split("Take-Action/")[1].split("/")[0];
-
                 const email = json[topic];
-                console.log(email);
+
+                const to = email["to"];
+                const subject = email["subject"];
+                const end = `${nameinp.value}\n${cityinp.value}, Pennsylvania, ${zipinp.value}`;
+                const body = `${email["body1"]}\n\n${bodymsg}\n\n${email["body2"]}\n\n${end}`;
+
+                final.innerText = body;
+
+                gmaillink.href = GmailLink(to, subject, body);
             });
-        
-        console.log(document.URL);
-
-        const emails = "ffarry@pasen.gov,boscola@pasenate.com,kward@pasen.gov,rbrown@pasen.gov,lculver@pasen.gov,cgebhard@pasen.gov,flynn@pasenate.com,PASenatorNick@pasenate.com,senatorsantarsiero@pasenate.com,tartaglione@pasenate.com,mbrooks@pasen.gov,pstefano@pasen.gov";
-        const finalbody = `Dear Senator,\n\nI am writing to ask you to support HB 1512 and vote to report it favorably out of committee. The bill would require manufacturers to supply Pennsylvanians with the proper tools, documentation, and reasonable access to repair their own digitally-based products.\n\n${bodymsg}\n\nAs a resident of Pennsylvania, I urge the committee to allow the full Senate to vote on the issue by reporting HB 1512 out of committee favorably.\n\nThank you for your time and consideration.\n\n${nameinp.value}\n${cityinp.value}, Pennsylvania, ${zipinp.value}`;
-        final.innerText = finalbody;
-
-        gmaillink.href = GmailLink(emails, "Reporting the Right to Repair Bill", finalbody);
 
         curpg = 3;
     }
