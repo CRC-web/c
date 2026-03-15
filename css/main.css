@@ -23,12 +23,11 @@ h1 {
 
 h2 {
     font-size: 4.375rem;
-    text-shadow: 0.25rem 0.5rem var(--darkshadow);
+    text-shadow: 0.25rem 0.25rem var(--darkshadow);
 }
 
 h3 {
     font-size: 4rem;
-    text-align: center;
     text-shadow: 0.125rem 0.25rem var(--darkshadow);
 }
 
@@ -119,7 +118,6 @@ p, .footertxt {
 .featured {
     margin: 0% 10%;
     padding: 0.5rem 0rem;
-    text-align: center;
 }
 
 .thumbnail {
@@ -139,12 +137,7 @@ p, .footertxt {
 
 .infoinp {
     color: #e0e0e0;
-    text-align: center;
     border: 0.25rem solid #444444;
-}
-
-.infoinpcontainer {
-    text-align: center;
 }
 
 .bodyinpcontainer {
@@ -159,6 +152,10 @@ p, .footertxt {
     resize: none;
     box-sizing: border-box;
     border: 0.25rem solid #2b2f3a;
+}
+
+.hook {
+    font-weight: bold;
 }
 
 .regbut, .infoinp {
@@ -247,7 +244,7 @@ h1, .container, .navbut {
     position: relative;
 }
 
-h2, .bannerdiv, .centeredbuttons {
+h2, h3, .bannerdiv, .centeredbuttons, .infoinp, .infoinpcontainer, .featured, .hook {
     text-align: center;
 }
 

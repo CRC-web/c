@@ -1,8 +1,20 @@
 {
     "RtR": {
-        "to": "ffarry@pasen.gov,boscola@pasenate.com,kward@pasen.gov,rbrown@pasen.gov,lculver@pasen.gov,cgebhard@pasen.gov,flynn@pasenate.com,PASenatorNick@pasenate.com,senatorsantarsiero@pasenate.com,tartaglione@pasenate.com,mbrooks@pasen.gov,pstefano@pasen.gov",
+        "to": "ffarry@pasen.gov,boscola@pasenate.com,kward@pasen.gov,rbrown@pasen.gov,lculver@pasen.gov,cgebhard@pasen.gov,flynn@pasenate.com,PASenatorNick@pasenate.com,senatorsantarsiero@pasenate.com,tartaglione@pasenate.com,mbrooks@pasen.gov,pstefano@pasen.gov,senatorkristin@pasen.gov",
         "subject": "Reporting the Right to Repair Bill",
         "body1": "Dear Senator,\n\nI am writing to ask you to support HB 1512 and vote to report it favorably out of committee. The bill would require manufacturers to supply Pennsylvanians with the proper tools, documentation, and reasonable access to repair their own digitally-based products.",
         "body2": "As a resident of Pennsylvania, I urge the committee to allow the full Senate to vote on the issue by reporting HB 1512 out of committee favorably.\n\nThank you for your time and consideration."
+    },
+    "LabelAI": {
+        "to": "tpennycuick@pasen.gov,miller@pasenate.com,kward@pasen.gov,lbaker@pasen.gov,ffarry@pasen.gov,cgebhard@pasen.gov,boscola@pasenate.com,kane@pasenate.com,jpicozzi@pasen.gov,jmalone@pasenate.com,senatorkristin@pasen.gov",
+        "subject": "Report HB 1598 favorably",
+        "body1": "Dear Senator,\n\nI am writing to ask you to support HB 1598 and vote to report it favorably out of committee. The bill would require creators, distributors, and publishers of AI-generated content to clearly place a label disclosing that it was AI-generated. Additionally, it would state that AI-generated Child Sexual Abuse Material is illegal and non-defensable by the terms of its creation.",
+        "body2": "As a resident of Pennsylvania, I urge the committee to allow the full Senate to vote on the issue by reporting HB 1598 out of committee favorably.\n\nThank you for your time and consideration."
+    },
+    "": {
+        "to": "",
+        "subject": "",
+        "body1": "",
+        "body2": ""
     }
 }
